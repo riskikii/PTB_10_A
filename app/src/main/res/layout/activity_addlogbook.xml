@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_dasar">
+
+    <Button
+        android:id="@+id/backAddTA"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@color/white"
+        app:icon="@drawable/ic_baseline_arrow_back_ios_24"
+        app:iconTint="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/tambah_logbook"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/interbold"
+        android:text="@string/tanggalLB"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/NameTA"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/NameTA"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="376dp"
+        android:layout_height="55dp"
+        android:fontFamily="@font/montserrat_regular"
+        app:boxBackgroundColor="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tanggalLB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00452828"
+            android:fontFamily="@font/montserrat_regular"
+            android:hint="@string/pilih_tanggalLB"
+            android:inputType="date"
+            android:typeface="normal"
+            app:endIconDrawable="@drawable/ic_baseline_date_range_24"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck,TextContrastCheck,TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/interbold"
+        android:text="@string/catatanAdd"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/NameTA"
+        app:layout_constraintTop_toBottomOf="@+id/NameTA" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="376dp"
+        android:layout_height="55dp"
+        android:fontFamily="@font/montserrat_regular"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/textView13">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_regular"
+            android:hint="@string/masukkan_catatanLB"
+            tools:ignore="TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="363dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_corner2"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/tambahLB"
+        android:textAllCaps="false"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

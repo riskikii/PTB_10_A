@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_dasar">
+
+    <Button
+        android:id="@+id/backAddTA"
+        android:layout_width="41dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@color/white"
+        app:icon="@drawable/ic_baseline_arrow_back_ios_24"
+        app:iconTint="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/formDaftarTA"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/interbold"
+        android:text="@string/namaDaftarTA"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/NameTA"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/NameTA"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="376dp"
+        android:layout_height="55dp"
+        android:fontFamily="@font/montserrat_regular"
+        app:boxBackgroundColor="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00452828"
+            android:fontFamily="@font/montserrat_regular"
+            android:hint="@string/masukkan_namaTA"
+            android:typeface="normal"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck,TextContrastCheck,TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/interbold"
+        android:text="@string/nimTA"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/NameTA"
+        app:layout_constraintTop_toBottomOf="@+id/NameTA" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cttLB"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="376dp"
+        android:layout_height="55dp"
+        android:fontFamily="@font/montserrat_regular"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/textView13">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_regular"
+            android:hint="@string/masukkan_nimTA"
+            tools:ignore="TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/dosen_pembimbingTA"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/cttLB"
+        app:layout_constraintTop_toBottomOf="@+id/cttLB" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dosenTA"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="376dp"
+        android:layout_height="55dp"
+        app:layout_constraintStart_toStartOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/textView16">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_regular"
+            android:hint="@string/masukkan_dosen_pembimbingTA"
+            android:textColorHint="#546E7A"
+            tools:ignore="TextContrastCheck,TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/judul_ta"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/dosenTA"
+        app:layout_constraintTop_toBottomOf="@+id/dosenTA" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/judulTA"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="376dp"
+        android:layout_height="55dp"
+        app:layout_constraintStart_toStartOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/textView17">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_regular"
+            android:hint="@string/masukkan_judul_ta"
+            tools:ignore="TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnDaftarTA"
+        android:layout_width="126dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_corner2"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/daftar_formTA"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/judulTA"
+        app:layout_constraintTop_toBottomOf="@+id/judulTA"
+        tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

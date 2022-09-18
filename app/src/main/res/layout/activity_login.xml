@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="143dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="88dp"
+        android:contentDescription="@string/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="315dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="22dp"
+        android:fontFamily="@font/interbold"
+        android:text="@string/sistem_informasi_pengelolaan_tugas_akhir_mahasiswa_unand"
+        android:textAlignment="center"
+        android:textColor="#8DA7D3"
+        android:textSize="20sp"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/montserratbold"
+        android:text="@string/masuk"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/montserratbold"
+        android:text="@string/nim"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="363dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:textColorHint="#8D8D8D"
+        app:endIconMode="clear_text"
+
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nimInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_regular"
+            android:hint="@string/masukkan_nim"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/black"
+            android:textColorHint="#78909C"
+            android:textStyle="bold"
+            android:typeface="normal"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck,TextContrastCheck,TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/montserratbold"
+        android:text="@string/kata_sandi"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/sandiInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="363dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:textColorHint="#8D8D8D"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/sandiInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_regular"
+            android:hint="@string/masukkan_sandi"
+            android:inputType="textPassword"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/black"
+            android:textColorHint="#78909C"
+            android:textStyle="bold"
+            android:typeface="normal"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck,TextContrastCheck,TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/montserratbold"
+        android:text="@string/lupa_kata_sandi"
+        android:textColor="#AB000000"
+        app:layout_constraintEnd_toEndOf="@+id/sandiInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/sandiInputLayout" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="346dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/rounded_corner"
+        android:fontFamily="@font/montserratbold"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
