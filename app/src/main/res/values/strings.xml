@@ -37,4 +37,20 @@
     <string name="judul_ta">Judul TA</string>
     <string name="masukkan_judul_ta">Masukkan Judul TA</string>
     <string name="daftar_formTA">Daftar TA</string>
+    <string name="seminar_hasil">Seminar Hasil</string>
+    <string name="seminar_hasilhome">Seminar Hasil</string>
+    <string name="ajukan">Ajukan</string>
+    <string name="pengajuan_semhas">Pengajuan Semhas</string>
+    <string name="nama">Nama</string>
+    <string name="nim2">NIM</string>
+    <string name="dosen_pembimbing">Dosen Pembimbing</string>
+    <string name="masukkan_judul_ta_anda">Masukkan Judul TA</string>
+    <string name="judul_ta_anda">Judul TA</string>
+    <string name="masukkan_dosen_pembimbing">Masukkan Dosen Pembimbing</string>
+    <string name="tanggal_">Tanggal</string>
+    <string name="masukkan_tanggal">Masukkan Tanggal</string>
+    <string name="masukkan_jam">Masukkan Jam</string>
+    <string name="laporan_tugas_akhir">Laporan Tugas Akhir</string>
+    <string name="nama_anda">Nama</string>
+    <string name="nim_anda">NIM</string>
 </resources>
