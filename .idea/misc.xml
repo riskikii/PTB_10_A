@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/activity_addlogbook.xml" value="0.1" />
+        <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/activity_addseminar.xml" value="0.32222222222222224" />
+        <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/activity_addta.xml" value="0.1762917933130699" />
+        <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/activity_detailsemhas.xml" value="0.32222222222222224" />
+        <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/activity_home.xml" value="0.33" />
+        <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/activity_logbook.xml" value="0.24818840579710144" />
+        <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/activity_login.xml" value="0.32222222222222224" />
+        <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/activity_seminar.xml" value="0.32222222222222224" />
+        <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/menu/bottom_navigation.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+</project>
