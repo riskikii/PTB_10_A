@@ -37,6 +37,10 @@
     <string name="judul_ta">Judul TA</string>
     <string name="masukkan_judul_ta">Masukkan Judul TA</string>
     <string name="daftar_formTA">Daftar TA</string>
+    <string name="masukkan_nama">Masukkan Nama</string>
+    <string name="jadwal_seminar">Jadwal Seminar</string>
+    <string name="jadwal_sidang">Jadwal Sidang</string>
+    <string name="todo">TODO</string>
     <string name="seminar_hasil">Seminar Hasil</string>
     <string name="seminar_hasilhome">Seminar Hasil</string>
     <string name="ajukan">Ajukan</string>
@@ -53,4 +57,7 @@
     <string name="laporan_tugas_akhir">Laporan Tugas Akhir</string>
     <string name="nama_anda">Nama</string>
     <string name="nim_anda">NIM</string>
+    <string name="choose_file">Choose File</string>
+    <string name="ajukan_seminar_hasil">Ajukan Seminar Hasil</string>
+    <string name="jam">Jam</string>
 </resources>

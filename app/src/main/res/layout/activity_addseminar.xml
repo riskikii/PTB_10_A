@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_dasar" >
+    android:background="@drawable/background_dasar"
+    tools:context=".AddSeminarActivity">
 
     <TextView
         android:id="@+id/textView19"
@@ -59,7 +60,7 @@
         android:id="@+id/textInputLayout6"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="367dp"
-        android:layout_height="wrap_content55dp"
+        android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView20">
@@ -177,7 +178,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="Jam"
+        android:text="@string/jam"
         android:textColor="#070707"
         app:layout_constraintStart_toStartOf="@+id/textInputLayout9"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout10" />
@@ -206,30 +207,34 @@
         android:fontFamily="@font/poppins_bold"
         android:text="@string/laporan_tugas_akhir"
         android:textColor="#070707"
-        app:layout_constraintStart_toStartOf="@+id/button7"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout9"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout9" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="96dp"
+        android:layout_height="31dp"
+        android:background="@drawable/rounded_corner2"
+        android:text="@string/choose_file"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/textView26"
+        app:layout_constraintTop_toBottomOf="@+id/textView26"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 
     <Button
         android:id="@+id/button6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:background="@drawable/rounded_corner2"
-        android:text="Ajukan Seminar Hasil"
+        android:text="@string/ajukan_seminar_hasil"
         android:textAllCaps="false"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="789dp" />
-
-    <Button
-        android:id="@+id/button7"
-        android:layout_height="37dp"
-        android:background="@drawable/rounded_corner2"
-        android:text="Choose File"
-        android:textAllCaps="false"
-        android:textSize="10sp"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="713dp" />
+        app:layout_constraintTop_toBottomOf="@+id/button7" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
