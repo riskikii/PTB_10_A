@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/listLogbook"
+        android:layout_width="358dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tanggalLogbook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/_5_septem_2022"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/CttLogbook"
+            android:layout_width="254dp"
+            android:layout_height="37dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/melakukan_perancangan_di_nagari_selatan_surau_ateh"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toStartOf="@+id/EditLogbook"
+            app:layout_constraintStart_toStartOf="@+id/tanggalLogbook"
+            app:layout_constraintTop_toBottomOf="@+id/tanggalLogbook" />
+
+        <Button
+            android:id="@+id/EditLogbook"
+            android:layout_width="62dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_corner2"
+            android:text="@string/edit"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="TextContrastCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
