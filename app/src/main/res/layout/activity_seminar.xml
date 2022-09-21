@@ -15,7 +15,7 @@
         android:fontFamily="@font/poppins_bold"
         android:text="@string/seminar_hasil"
         android:textColor="#000000"
-        android:textSize="17sp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -37,13 +37,12 @@
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
         android:layout_marginTop="81dp"
         android:fontFamily="@font/poppins_bold"
         android:text="@string/seminar_hasilhome"
         android:textColor="#000000"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
         app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -60,20 +59,20 @@
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="227dp"
-            android:layout_height="151dp"
+            android:layout_width="204dp"
+            android:layout_height="162dp"
+            android:contentDescription="TODO"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/gambarseminar"
-            android:contentDescription="TODO" />
+            app:srcCompat="@drawable/gambarseminar" />
 
         <Button
             android:id="@+id/button4"
             android:layout_width="114dp"
             android:layout_height="48dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/rounded_corner"
             android:fontFamily="@font/montserrat_regular"
             android:text="@string/ajukan"

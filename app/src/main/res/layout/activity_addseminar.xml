@@ -34,16 +34,16 @@
 
     <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="wrap_content"
+        android:layout_width="48dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="30dp"
         android:backgroundTint="@color/white"
+        android:contentDescription="TODO"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24"
-        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,ImageContrastCheck,ImageContrastCheck"
-        android:contentDescription="TODO" />
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,ImageContrastCheck,ImageContrastCheck" />
 
     <TextView
         android:id="@+id/textView21"
@@ -204,11 +204,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:layout_marginEnd="218dp"
         android:fontFamily="@font/poppins_bold"
         android:text="@string/laporan_tugas_akhir"
         android:textColor="#070707"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintStart_toStartOf="@+id/textInputLayout9"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout9" />
 
     <Button
         android:id="@+id/button7"
@@ -227,7 +229,7 @@
         android:id="@+id/button6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/rounded_corner2"
         android:text="@string/ajukan_seminar_hasil"
         android:textAllCaps="false"
@@ -236,5 +238,22 @@
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button7" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="114dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="240dp"
+        android:background="@drawable/rounded_corner2"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Choose file"
+        android:textAllCaps="false"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView26"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

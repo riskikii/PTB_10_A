@@ -136,11 +136,33 @@
     <string name="laporan_tugas_akhir">Laporan Tugas Akhir</string>
     <string name="nama_anda">Nama</string>
     <string name="nim_anda">NIM</string>
-    <string name="choose_file">Choose File</string>
-    <string name="ajukan_seminar_hasil">Ajukan Seminar Hasil</string>
-    <string name="jam">Jam</string>
+    <string name="detail_semhas">Detail Semhas</string>
+    <string name="seminar_hasil_anda">Seminar Hasil</string>
+    <string name="tambah_peserta">Tambah Peserta</string>
+    <string name="proggers_semhas">Proggers Semhas</string>
+    <string name="nim_kamu">NIM</string>
+    <string name="tambah_peserta_">Tambah Peserta</string>
+    <string name="tambah_peserta_anda">Tambah Peserta</string>
+    <string name="masukkan_nim_anda">Masukkan NIM</string>
+    <string name="nama_kamu">Nama</string>
+    <string name="masukkan_nama">Masukkan Nama</string>
+    <string name="tambah_peserta_seminar">Tambah Peserta</string>
+    <string name="daftar_peserta_semhas">Daftar Peserta Semhas</string>
+    <string name="proggres_semhas">Proggres Semhas</string>
+    <string name="progress">Progress</string>
+    <string name="jadwal_seminardansidang">Jadwal Seminar dan Sidang</string>
+    <string name="jadwal_sidang">Jadwal Sidang</string>
+    <string name="edit">Edit</string>
+    <string name="list_logbook_anda">List LogBook</string>
+    <string name="jadwal_seminar">Jadwal Seminar</string>
+    <string name="edit2">Edit</string>
+    <string name="tanggal_anda">Tanggal</string>
+    <string name="edit_list">Edit</string>
+    <string name="edit_list2">Edit</string>
+    <string name="tanggal_1">Tanggal</string>
+    <string name="tanggal_2">Tanggal</string>
+    <string name="jadwal_sidang_anda">Jadwal Sidang</string>
     <string name="_5_septem_2022">5 Septem 2022</string>
     <string name="melakukan_perancangan_di_nagari_selatan_surau_ateh">Melakukan perancangan di nagari selatan surau ateh</string>
     <string name="edit">Edit</string>
-
 </resources>
