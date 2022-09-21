@@ -1,4 +1,25 @@
 <resources>
+    <string-array name="tanggal_logbook">
+        <item>6 September 2022</item>
+        <item>7 September 2022</item>
+        <item>8 September 2022</item>
+        <item>9 September 2022</item>
+        <item>10 September 2022</item>
+        <item>11 September 2022</item>
+        <item>12 September 2022</item>
+    </string-array>
+    <string-array name="catatan_logbook">
+        <item>Analisa terkait nagari tanah datar</item>
+        <item>Melakukan perancangan sesuai kebutuhan</item>
+        <item>Melanjutkan perangcanban</item>
+        <item>Melanjutkan perangcanban</item>
+        <item>Melanjutkan perangcanban</item>
+        <item>Melanjutkan perangcanban</item>
+        <item>Melanjutkan perangcanban</item>
+    </string-array>
+
+
+
     <string name="app_name">PTB_10_A</string>
     <string name="sistem_informasi_pengelolaan_tugas_akhir_mahasiswa_unand">SISTEM INFORMASI PENGELOLAAN TUGAS AKHIR MAHASISWA UNAND</string>
     <string name="masuk">Masuk</string>
@@ -60,4 +81,7 @@
     <string name="choose_file">Choose File</string>
     <string name="ajukan_seminar_hasil">Ajukan Seminar Hasil</string>
     <string name="jam">Jam</string>
+    <string name="_5_septem_2022">5 Septem 2022</string>
+    <string name="melakukan_perancangan_di_nagari_selatan_surau_ateh">Melakukan perancangan di nagari selatan surau ateh</string>
+    <string name="edit">Edit</string>
 </resources>
