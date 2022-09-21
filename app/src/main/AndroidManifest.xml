@@ -35,9 +35,20 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
-            android:exported="false" />
-
+            android:name=".HomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AddtaActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LogbookActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AddlogbookActivity"
+            android:exported="true" />
+        <activity
+            android:name=".EditlogbookActivity"
+            android:exported="true" />
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

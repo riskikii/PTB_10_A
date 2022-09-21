@@ -1,4 +1,25 @@
 <resources>
+    <string-array name="tanggal_logbook">
+        <item>6 September 2022</item>
+        <item>7 September 2022</item>
+        <item>8 September 2022</item>
+        <item>9 September 2022</item>
+        <item>10 September 2022</item>
+        <item>11 September 2022</item>
+        <item>12 September 2022</item>
+    </string-array>
+    <string-array name="catatan_logbook">
+        <item>Analisa terkait nagari tanah datar</item>
+        <item>Melakukan perancangan sesuai kebutuhan</item>
+        <item>Melanjutkan perangcanban</item>
+        <item>Melanjutkan perangcanban</item>
+        <item>Melanjutkan perangcanban</item>
+        <item>Melanjutkan perangcanban</item>
+        <item>Melanjutkan perangcanban</item>
+    </string-array>
+
+
+
     <string name="app_name">PTB_10_A</string>
     <string name="sistem_informasi_pengelolaan_tugas_akhir_mahasiswa_unand">SISTEM INFORMASI PENGELOLAAN TUGAS AKHIR MAHASISWA UNAND</string>
     <string name="masuk">Masuk</string>
@@ -37,7 +58,7 @@
     <string name="judul_ta">Judul TA</string>
     <string name="masukkan_judul_ta">Masukkan Judul TA</string>
     <string name="daftar_formTA">Daftar TA</string>
-    <string name="nama">Nama</string>
+    <string name="namaprofil">NamaProfil</string>
     <string name="nim2">NIM</string>
     <string name="judul_ta2">Judul TA</string>
     <string name="todo">TODO</string>
@@ -95,4 +116,31 @@
     <string name="password_baru">Password Baru</string>
     <string name="password_lama">Password Lama</string>
     <string name="ubah_password3">Ubah Password</string>
+    <string name="masukkan_nama">Masukkan Nama</string>
+    <string name="jadwal_seminar">Jadwal Seminar</string>
+    <string name="jadwal_sidang">Jadwal Sidang</string>
+    <string name="todo">TODO</string>
+    <string name="seminar_hasil">Seminar Hasil</string>
+    <string name="seminar_hasilhome">Seminar Hasil</string>
+    <string name="ajukanTA">Ajukan</string>
+    <string name="pengajuan_semhas">Pengajuan Semhas</string>
+    <string name="nama">Nama</string>
+    <string name="nim_mahasiswaTA">NIM</string>
+    <string name="dosen_pembimbing">Dosen Pembimbing</string>
+    <string name="masukkan_judul_ta_anda">Masukkan Judul TA</string>
+    <string name="judul_ta_anda">Judul TA</string>
+    <string name="masukkan_dosen_pembimbing">Masukkan Dosen Pembimbing</string>
+    <string name="tanggal_">Tanggal</string>
+    <string name="masukkan_tanggal">Masukkan Tanggal</string>
+    <string name="masukkan_jam">Masukkan Jam</string>
+    <string name="laporan_tugas_akhir">Laporan Tugas Akhir</string>
+    <string name="nama_anda">Nama</string>
+    <string name="nim_anda">NIM</string>
+    <string name="choose_file">Choose File</string>
+    <string name="ajukan_seminar_hasil">Ajukan Seminar Hasil</string>
+    <string name="jam">Jam</string>
+    <string name="_5_septem_2022">5 Septem 2022</string>
+    <string name="melakukan_perancangan_di_nagari_selatan_surau_ateh">Melakukan perancangan di nagari selatan surau ateh</string>
+    <string name="edit">Edit</string>
+
 </resources>
