@@ -4,15 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_home">
+    android:background="@drawable/background_home"
+    tools:context=".HomeActivity">
 
     <Button
         android:id="@+id/daftarTA"
         android:layout_width="177dp"
         android:layout_height="51dp"
-        android:layout_marginTop="190dp"
-        android:background="@drawable/rounded_corner"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/gradient"
         android:fontFamily="@font/poppins_medium"
+        android:onClick="daftarTA"
         android:text="@string/daftar_ta"
         android:textAllCaps="false"
         android:textSize="20sp"
@@ -48,10 +50,11 @@
             android:id="@+id/imageView"
             android:layout_width="168dp"
             android:layout_height="117dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="4dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/gambar_seminar" />
+            app:srcCompat="@drawable/gambar_seminar"
+            android:contentDescription="TODO" />
 
         <ImageView
             android:id="@+id/imageView6"
@@ -60,7 +63,8 @@
             android:layout_marginBottom="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:srcCompat="@drawable/gambar_seminar" />
+            app:srcCompat="@drawable/gambar_seminar"
+            android:contentDescription="TODO" />
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView3"
@@ -79,7 +83,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
             android:fontFamily="@font/inter"
-            android:text="Jadwal Seminar"
+            android:text="@string/jadwal_seminar"
             android:textColor="#000000"
             android:textSize="15sp"
             android:textStyle="bold"
@@ -92,7 +96,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:fontFamily="@font/inter"
-            android:text="Jadwal Sidang"
+            android:text="@string/jadwal_sidang"
             android:textColor="#000000"
             android:textSize="15sp"
             android:textStyle="bold"
@@ -107,7 +111,8 @@
             app:layout_constraintEnd_toEndOf="@+id/imageView8"
             app:layout_constraintStart_toStartOf="@+id/imageView8"
             app:layout_constraintTop_toBottomOf="@+id/imageView8"
-            app:srcCompat="@drawable/ic_baseline_access_time_24" />
+            app:srcCompat="@drawable/ic_baseline_access_time_24"
+            android:contentDescription="TODO" />
 
         <ImageView
             android:id="@+id/imageView8"
@@ -116,7 +121,8 @@
             android:layout_marginTop="10dp"
             app:layout_constraintStart_toStartOf="@+id/textView6"
             app:layout_constraintTop_toBottomOf="@+id/textView6"
-            app:srcCompat="@drawable/ic_baseline_date_range_24" />
+            app:srcCompat="@drawable/ic_baseline_date_range_24"
+            android:contentDescription="@string/todo" />
 
         <ImageView
             android:id="@+id/imageView9"
@@ -126,7 +132,8 @@
             app:layout_constraintEnd_toEndOf="@+id/imageView7"
             app:layout_constraintStart_toStartOf="@+id/imageView7"
             app:layout_constraintTop_toBottomOf="@+id/imageView7"
-            app:srcCompat="@drawable/ic_baseline_location_on_24" />
+            app:srcCompat="@drawable/ic_baseline_location_on_24"
+            android:contentDescription="TODO" />
 
         <ImageView
             android:id="@+id/imageView12"
@@ -136,7 +143,8 @@
             app:layout_constraintEnd_toEndOf="@+id/imageView11"
             app:layout_constraintStart_toStartOf="@+id/imageView11"
             app:layout_constraintTop_toBottomOf="@+id/imageView11"
-            app:srcCompat="@drawable/ic_baseline_location_on_24" />
+            app:srcCompat="@drawable/ic_baseline_location_on_24"
+            android:contentDescription="TODO" />
 
         <ImageView
             android:id="@+id/imageView10"
@@ -180,5 +188,15 @@
         android:textSize="17sp"
         app:layout_constraintStart_toStartOf="@+id/cardView2"
         app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        app:itemHorizontalTranslationEnabled="false"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_navigation"
+        tools:layout_editor_absoluteX="-1dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

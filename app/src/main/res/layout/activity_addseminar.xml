@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_dasar" >
+    android:background="@drawable/background_dasar"
+    tools:context=".AddSeminarActivity">
 
     <TextView
         android:id="@+id/textView19"
@@ -177,7 +178,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="Jam"
+        android:text="@string/jam"
         android:textColor="#070707"
         app:layout_constraintStart_toStartOf="@+id/textInputLayout9"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout10" />
@@ -209,7 +210,20 @@
         android:textColor="#070707"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout9" />
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout9"
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="96dp"
+        android:layout_height="31dp"
+        android:background="@drawable/rounded_corner2"
+        android:text="@string/choose_file"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/textView26"
+        app:layout_constraintTop_toBottomOf="@+id/textView26"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 
     <Button
         android:id="@+id/button6"
@@ -217,7 +231,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:background="@drawable/rounded_corner2"
-        android:text="Ajukan Seminar Hasil"
+        android:text="@string/ajukan_seminar_hasil"
         android:textAllCaps="false"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"

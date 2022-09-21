@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_dasar">
+    android:background="@drawable/background_dasar"
+    tools:context=".AddtaActivity">
 
     <Button
         android:id="@+id/backAddTA"
@@ -41,29 +42,8 @@
         android:text="@string/namaDaftarTA"
         android:textColor="#000000"
         android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="@+id/NameTA"
+        app:layout_constraintStart_toStartOf="@+id/nama_user"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/NameTA"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="376dp"
-        android:layout_height="55dp"
-        android:fontFamily="@font/montserrat_regular"
-        app:boxBackgroundColor="#00FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:backgroundTint="#00452828"
-            android:fontFamily="@font/montserrat_regular"
-            android:hint="@string/masukkan_namaTA"
-            android:typeface="normal"
-            tools:ignore="TouchTargetSizeCheck,TextContrastCheck,TextContrastCheck,TextContrastCheck" />
-    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/textView13"
@@ -74,8 +54,8 @@
         android:text="@string/nimTA"
         android:textColor="#000000"
         android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="@+id/NameTA"
-        app:layout_constraintTop_toBottomOf="@+id/NameTA" />
+        app:layout_constraintStart_toStartOf="@+id/nama_user"
+        app:layout_constraintTop_toBottomOf="@+id/nama_user" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/cttLB"
@@ -161,5 +141,22 @@
         app:layout_constraintEnd_toEndOf="@+id/judulTA"
         app:layout_constraintTop_toBottomOf="@+id/judulTA"
         tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nama_user"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="376dp"
+        android:layout_height="55dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/masukkan_namaTA"
+            tools:ignore="TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
