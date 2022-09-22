@@ -3,6 +3,26 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/activity_add2peserta.xml" value="0.5" />
+        <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/activity_addlogbook.xml" value="0.67" />
+        <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/activity_addpeserta.xml" value="0.33" />
+        <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/activity_addseminar.xml" value="0.25" />
+        <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/activity_addsidang.xml" value="0.33" />
+        <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/activity_addta.xml" value="0.5" />
+        <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/activity_detailsemhas.xml" value="0.25" />
+        <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/activity_editlogbook.xml" value="0.32222222222222224" />
+        <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/activity_home.xml" value="0.33" />
+        <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/activity_jadwalsemhas.xml" value="0.33" />
+        <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/activity_logbook.xml" value="0.25" />
+        <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/activity_login.xml" value="0.32222222222222224" />
+        <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/activity_profil.xml" value="0.33" />
+        <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/activity_seminar.xml" value="0.25" />
+        <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/activity_sidang.xml" value="0.25" />
+        <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/activity_ubahpassword.xml" value="0.5" />
+        <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/activity_ubahprofil.xml" value="0.23596014492753623" />
+        <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/item_row_logbook.xml" value="0.25" />
+        <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/item_row_peserta.xml" value="0.75" />
+        <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/menu/bottom_navigation.xml" value="0.1" />
         <entry key="..\:/Users/TAUFIK HIDAYAT/Documents/GitHub/PTB_10_A/app/src/main/res/layout/activity_add2peserta.xml" value="0.22" />
         <entry key="..\:/Users/TAUFIK HIDAYAT/Documents/GitHub/PTB_10_A/app/src/main/res/layout/activity_addlogbook.xml" value="0.33" />
         <entry key="..\:/Users/TAUFIK HIDAYAT/Documents/GitHub/PTB_10_A/app/src/main/res/layout/activity_addpeserta.xml" value="0.22" />
@@ -17,13 +37,6 @@
         <entry key="..\:/Users/TAUFIK HIDAYAT/Documents/GitHub/PTB_10_A/app/src/main/res/layout/activity_main.xml" value="0.17346014492753623" />
         <entry key="..\:/Users/TAUFIK HIDAYAT/Documents/GitHub/PTB_10_A/app/src/main/res/layout/activity_progresssemhas.xml" value="0.22" />
         <entry key="..\:/Users/TAUFIK HIDAYAT/Documents/GitHub/PTB_10_A/app/src/main/res/layout/activity_seminar.xml" value="0.2" />
-        <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/activity_addlogbook.xml" value="0.1" />
-        <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/activity_addta.xml" value="0.1762917933130699" />
-        <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/activity_home.xml" value="0.33" />
-        <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/activity_logbook.xml" value="0.22" />
-        <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/activity_login.xml" value="0.32222222222222224" />
-        <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/item_row_logbook.xml" value="0.22" />
-        <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/menu/bottom_navigation.xml" value="0.1" />
       </map>
     </option>
   </component>

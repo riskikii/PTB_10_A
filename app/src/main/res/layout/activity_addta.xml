@@ -37,7 +37,7 @@
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="70dp"
         android:fontFamily="@font/interbold"
         android:text="@string/namaDaftarTA"
         android:textColor="#000000"
@@ -138,6 +138,7 @@
         android:fontFamily="@font/poppins_medium"
         android:text="@string/daftar_formTA"
         android:textAllCaps="false"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/judulTA"
         app:layout_constraintTop_toBottomOf="@+id/judulTA"
         tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck,TextContrastCheck" />

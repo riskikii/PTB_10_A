@@ -17,7 +17,22 @@
         <item>Melanjutkan perangcanban</item>
         <item>Melanjutkan perangcanban</item>
     </string-array>
-
+    <string-array name="nama_peserta">
+        <item>Rizki Juni Darmawan</item>
+        <item>Sekar Rayhanisa</item>
+        <item>Taufik Hidayat</item>
+        <item>Rizki Juni Darmawan</item>
+        <item>Sekar Rayhanisa</item>
+        <item>Taufik Hidayat</item>
+    </string-array>
+    <string-array name="nim_peserta">
+        <item>2011527002</item>
+        <item>2011521016</item>
+        <item>2011521001</item>
+        <item>2011527002</item>
+        <item>2011521016</item>
+        <item>2011521001</item>
+    </string-array>
 
 
     <string name="app_name">PTB_10_A</string>
@@ -69,7 +84,6 @@
     <string name="waktu">Waktu</string>
     <string name="pilih_jadwal">--Pilih jadwal--</string>
     <string name="ruangan2">Ruangan</string>
-    <string name="dosen_pembimbing">Dosen Pembimbing</string>
     <string name="judul_ta3">Judul TA</string>
     <string name="nim3">NIM</string>
     <string name="nama2">Nama</string>
@@ -116,10 +130,7 @@
     <string name="password_baru">Password Baru</string>
     <string name="password_lama">Password Lama</string>
     <string name="ubah_password3">Ubah Password</string>
-    <string name="masukkan_nama">Masukkan Nama</string>
-    <string name="jadwal_seminar">Jadwal Seminar</string>
-    <string name="jadwal_sidang">Jadwal Sidang</string>
-    <string name="todo">TODO</string>
+
     <string name="seminar_hasil">Seminar Hasil</string>
     <string name="seminar_hasilhome">Seminar Hasil</string>
     <string name="ajukanTA">Ajukan</string>
@@ -164,5 +175,6 @@
     <string name="jadwal_sidang_anda">Jadwal Sidang</string>
     <string name="_5_septem_2022">5 Septem 2022</string>
     <string name="melakukan_perancangan_di_nagari_selatan_surau_ateh">Melakukan perancangan di nagari selatan surau ateh</string>
-    <string name="edit">Edit</string>
+    <string name="ajukanSemhas">Ajukan</string>
+    <string name="sidang_ta">Sidang TA</string>
 </resources>

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_dasar"
-    tools:context=".activity_addsidang">
+    tools:context=".AddSidangActivity">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout3"

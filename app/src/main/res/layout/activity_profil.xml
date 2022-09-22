@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_home"
-    tools:context=".activity_profil">
+    tools:context=".ProfilActivity">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/circleImageView"
@@ -23,10 +23,12 @@
         android:id="@+id/textView24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="40dp"
         android:fontFamily="@font/montserratbold"
         android:text="@string/profil"
         android:textColor="#050505"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -51,7 +53,7 @@
         android:ems="10"
         android:fontFamily="@font/montserrat_regular"
         android:gravity="start|top"
-        android:hint="@string/sekar_rayhannisa"
+        android:hint="@string/_2011521022_"
         android:inputType="textMultiLine"
         android:textColor="#090909"
         android:textSize="16sp"
@@ -138,7 +140,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="45dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="40dp"
         android:fontFamily="@font/montserratbold"
         android:text="@string/nim4"
         android:textColor="#070707"
@@ -194,7 +196,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine4" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/ajukanSemhas"
         android:layout_width="200dp"
         android:layout_height="40dp"
         android:layout_marginTop="15dp"
@@ -214,7 +216,7 @@
         android:background="@drawable/rounded_corner"
         android:text="@string/ubah_password"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/ajukanSemhas"
         tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 
     <ImageButton
@@ -222,11 +224,22 @@
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="28dp"
-        android:backgroundTint="@color/white"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#D6D6D6"
+        android:contentDescription="@string/todo2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24"
-        tools:ignore="SpeakableTextPresentCheck"
-        android:contentDescription="@string/todo2" />
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        app:itemHorizontalTranslationEnabled="false"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_navigation"
+        tools:layout_editor_absoluteX="-1dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,6 +4,7 @@ import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -43,8 +44,23 @@ public class LogbookActivity extends AppCompatActivity {
                     case R.id.nav_logbook:
                         return true;
 
+                    case R.id.nav_semhas:
+                        startActivity(new Intent(getApplicationContext(),SeminarActivity.class));
+                        overridePendingTransition(0,0);
+                        return true;
+
+                    case R.id.nav_sidang:
+                        startActivity(new Intent(getApplicationContext(),SidangActivity.class));
+                        overridePendingTransition(0,0);
+                        return true;
+
+                    case R.id.nav_profile:o:
+                        startActivity(new Intent(getApplicationContext(), ProfilActivity.class));
+                        overridePendingTransition(0,0);
+                        return true;
+
                     case R.id.nav_home:
-                        startActivity(new Intent(getApplicationContext(),HomeActivity.class));
+                        startActivity(new Intent(getApplicationContext(), HomeActivity.class));
                         overridePendingTransition(0,0);
                         return true;
                 }
@@ -62,14 +78,18 @@ public class LogbookActivity extends AppCompatActivity {
     public ArrayList<ListLbActivity> getListLogbooks(){
         String[] tanggal_logbook = getResources().getStringArray(R.array.tanggal_logbook);
         String[] catatan_logbook = getResources().getStringArray(R.array.catatan_logbook);
-        ArrayList<ListLbActivity> listHero = new ArrayList<>();
+        ArrayList<ListLbActivity> listLbactivity = new ArrayList<>();
         for (int i = 0; i < tanggal_logbook.length; i++) {
             ListLbActivity listLbActivity = new ListLbActivity();
             listLbActivity.setTanggal(tanggal_logbook[i]);
             listLbActivity.setCatatan(catatan_logbook[i]);
-            listHero.add(listLbActivity);
+            listLbactivity.add(listLbActivity);
         }
-        return listHero;
+        return listLbactivity;
     }
-    
+
+    public void tambahLB(View view) {
+        Intent intent = new Intent(LogbookActivity.this,AddlogbookActivity.class);
+        startActivity(intent);
+    }
 }

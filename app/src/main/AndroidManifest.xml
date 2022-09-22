@@ -14,18 +14,6 @@
         android:theme="@style/Theme.PTB_10_A"
         tools:targetApi="31">
         <activity
-            android:name=".activity_ubahpassword"
-            android:exported="false" />
-        <activity
-            android:name=".activity_ubahprofil"
-            android:exported="false" />
-        <activity
-            android:name=".activity_profil"
-            android:exported="false" />
-        <activity
-            android:name=".activity_addsidang"
-            android:exported="false" />
-        <activity
             android:name=".loginActivity"
             android:exported="true">
             <intent-filter>
@@ -49,6 +37,28 @@
         <activity
             android:name=".EditlogbookActivity"
             android:exported="true" />
+        <activity
+            android:name=".SidangActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity_ubahpassword"
+            android:exported="true" />
+        <activity
+            android:name=".activity_ubahprofil"
+            android:exported="true" />
+        <activity
+            android:name=".ProfilActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AddSidangActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SeminarActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AddSeminarActivity"
+            android:exported="true" />
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

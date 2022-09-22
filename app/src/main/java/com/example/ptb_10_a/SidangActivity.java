@@ -10,17 +10,17 @@ import android.view.View;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class SeminarActivity extends AppCompatActivity {
+public class SidangActivity extends AppCompatActivity {
 
     BottomNavigationView bottomNavigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_seminar);
+        setContentView(R.layout.activity_sidang);
 
         bottomNavigationView = findViewById(R.id.bottom_nav);
-        bottomNavigationView.setSelectedItemId(R.id.nav_semhas);
+        bottomNavigationView.setSelectedItemId(R.id.nav_sidang);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -34,15 +34,15 @@ public class SeminarActivity extends AppCompatActivity {
                         return true;
 
                     case R.id.nav_semhas:
-                        return true;
-
-                    case R.id.nav_sidang:
-                        startActivity(new Intent(getApplicationContext(), SidangActivity.class));
+                        startActivity(new Intent(getApplicationContext(),SeminarActivity.class));
                         overridePendingTransition(0,0);
                         return true;
 
+                    case R.id.nav_sidang:
+                        return true;
+
                     case R.id.nav_profile:
-                        startActivity(new Intent(getApplicationContext(),ProfilActivity.class));
+                    startActivity(new Intent(getApplicationContext(), ProfilActivity.class));
                         overridePendingTransition(0,0);
                         return true;
 
@@ -56,13 +56,8 @@ public class SeminarActivity extends AppCompatActivity {
             }
         });
     }
-    public void ajukanSemhas(View view) {
-        Intent intent = new Intent(SeminarActivity.this,AddSeminarActivity.class);
-        startActivity(intent);
-    }
-
-    public void kembali(View view) {
-        Intent intent = new Intent(SeminarActivity.this,HomeActivity.class);
+    public void ajukanSidang(View view) {
+        Intent intent = new Intent(SidangActivity.this,AddSidangActivity.class);
         startActivity(intent);
     }
 }
