@@ -18,20 +18,20 @@
         <item>Melanjutkan perangcanban</item>
     </string-array>
     <string-array name="nama_peserta">
-        <item>Rizki Juni Darmawan</item>
-        <item>Sekar Rayhanisa</item>
-        <item>Taufik Hidayat</item>
-        <item>Rizki Juni Darmawan</item>
-        <item>Sekar Rayhanisa</item>
-        <item>Taufik Hidayat</item>
+        <item>: Rizki Juni Darmawan</item>
+        <item>: Sekar Rayhanisa</item>
+        <item>: Taufik Hidayat</item>
+        <item>: Rizki Juni Darmawan</item>
+        <item>: Sekar Rayhanisa</item>
+        <item>: Taufik Hidayat</item>
     </string-array>
     <string-array name="nim_peserta">
-        <item>2011527002</item>
-        <item>2011521016</item>
-        <item>2011521001</item>
-        <item>2011527002</item>
-        <item>2011521016</item>
-        <item>2011521001</item>
+        <item>: 2011527002</item>
+        <item>: 2011521016</item>
+        <item>: 2011521001</item>
+        <item>: 2011527002</item>
+        <item>: 2011521016</item>
+        <item>: 2011521001</item>
     </string-array>
 
 

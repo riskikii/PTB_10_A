@@ -42,7 +42,7 @@
             card_view:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView51"
+            android:id="@+id/namaPeserta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -54,7 +54,7 @@
             card_view:layout_constraintTop_toTopOf="@+id/textView47" />
 
         <TextView
-            android:id="@+id/textView52"
+            android:id="@+id/nimPeserta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"

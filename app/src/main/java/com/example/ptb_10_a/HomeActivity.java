@@ -100,4 +100,9 @@ public class HomeActivity extends AppCompatActivity {
         Intent intent = new Intent(HomeActivity.this,AddlogbookActivity.class);
         startActivity(intent);
     }
+
+    public void detailLogbook(View view) {
+        Intent intent = new Intent(HomeActivity.this,EditlogbookActivity.class);
+        startActivity(intent);
+    }
 }

@@ -9,8 +9,8 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/circleImageView"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:layout_marginTop="80dp"
         android:src="@drawable/gambar_profil"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,7 +23,7 @@
         android:id="@+id/textView24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="32dp"
         android:fontFamily="@font/montserratbold"
         android:text="@string/profil"
         android:textColor="#050505"
@@ -48,92 +48,87 @@
     <EditText
         android:id="@+id/editTextTextMultiLine"
         android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="3dp"
+        android:layout_height="39dp"
         android:ems="10"
         android:fontFamily="@font/montserrat_regular"
         android:gravity="start|top"
         android:hint="@string/_2011521022_"
+        android:importantForAutofill="no"
         android:inputType="textMultiLine"
         android:textColor="#090909"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView26"
-        tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck"
-        android:importantForAutofill="no" />
+        tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
 
     <EditText
         android:id="@+id/editTextTextMultiLine2"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="3dp"
         android:ems="10"
         android:fontFamily="@font/montserrat_regular"
         android:gravity="start|top"
         android:hint="@string/s1_sistem_informasi"
+        android:importantForAutofill="no"
         android:inputType="textMultiLine"
         android:textColor="#070707"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView27"
-        tools:ignore="TouchTargetSizeCheck,TextContrastCheck"
-        android:importantForAutofill="no" />
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 
     <EditText
         android:id="@+id/editTextTextMultiLine3"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="3dp"
         android:ems="10"
         android:fontFamily="@font/montserrat_regular"
         android:gravity="start|top"
         android:hint="@string/perempuan"
+        android:importantForAutofill="no"
         android:inputType="textMultiLine"
         android:textColor="#070707"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView28"
-        tools:ignore="TouchTargetSizeCheck,TextContrastCheck"
-        android:importantForAutofill="no" />
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 
     <EditText
         android:id="@+id/editTextTextMultiLine4"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="3dp"
         android:ems="10"
         android:fontFamily="@font/montserrat_regular"
         android:gravity="start|top"
         android:hint="@string/jl_kasturi_1_no_31a"
+        android:importantForAutofill="no"
         android:inputType="textMultiLine"
         android:textColor="#070707"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView29"
-        tools:ignore="TouchTargetSizeCheck,TextContrastCheck"
-        android:importantForAutofill="no" />
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 
     <EditText
         android:id="@+id/editTextTextMultiLine5"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="3dp"
         android:ems="10"
         android:fontFamily="@font/montserrat_regular"
         android:gravity="start|top"
         android:hint="@string/_082311303597"
+        android:importantForAutofill="no"
         android:inputType="textMultiLine"
         android:textColor="#040404"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView30"
-        tools:ignore="TouchTargetSizeCheck,TextContrastCheck"
-        android:importantForAutofill="no" />
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 
     <TextView
         android:id="@+id/textView26"
@@ -152,7 +147,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="45dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/montserratbold"
         android:text="@string/program_studi"
         android:textColor="#050505"
@@ -164,7 +159,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="45dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/montserratbold"
         android:text="@string/jenis_kelamin"
         android:textColor="#090909"
@@ -176,7 +171,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="45dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/montserratbold"
         android:text="@string/alamat"
         android:textColor="#050505"
@@ -188,7 +183,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="45dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/montserratbold"
         android:text="@string/no_hp"
         android:textColor="#090909"
@@ -203,6 +198,7 @@
         android:layout_marginEnd="42dp"
         android:background="@drawable/rounded_corner"
         android:text="@string/ubah_profil"
+        android:onClick="ubahProfil"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine5"
         tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
@@ -215,21 +211,22 @@
         android:layout_marginEnd="42dp"
         android:background="@drawable/rounded_corner"
         android:text="@string/ubah_password"
+        android:onClick="ubahPasword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ajukanSemhas"
         tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 
-    <ImageButton
-        android:id="@+id/imageButton2"
+    <Button
+        android:id="@+id/backAddTA"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="25dp"
-        android:backgroundTint="#D6D6D6"
-        android:contentDescription="@string/todo2"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"
+        app:icon="@drawable/ic_baseline_arrow_back_ios_24"
+        app:iconTint="#000000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

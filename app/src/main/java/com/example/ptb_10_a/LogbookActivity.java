@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,7 +17,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LogbookActivity extends AppCompatActivity {
+public class LogbookActivity extends AppCompatActivity{
     private RecyclerView listLogbook;
     private ArrayList<ListLbActivity> list = new ArrayList<>();
     BottomNavigationView bottomNavigationView;
@@ -31,6 +32,8 @@ public class LogbookActivity extends AppCompatActivity {
 
         list.addAll(getListLogbooks());
         showRecyclerList();
+
+
 
         bottomNavigationView = findViewById(R.id.bottom_nav);
         bottomNavigationView.setSelectedItemId(R.id.nav_logbook);
@@ -92,4 +95,12 @@ public class LogbookActivity extends AppCompatActivity {
         Intent intent = new Intent(LogbookActivity.this,AddlogbookActivity.class);
         startActivity(intent);
     }
+
+    public void detailLogbook(View view) {
+        Intent intent = new Intent(LogbookActivity.this,EditlogbookActivity.class);
+        startActivity(intent);
+    }
+
+
+
 }

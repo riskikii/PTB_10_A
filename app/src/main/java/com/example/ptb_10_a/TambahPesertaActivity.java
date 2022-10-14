@@ -10,17 +10,17 @@ import android.view.View;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class ProfilActivity extends AppCompatActivity {
+public class TambahPesertaActivity extends AppCompatActivity {
 
     BottomNavigationView bottomNavigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profil);
+        setContentView(R.layout.activity_detailsemhas);
 
         bottomNavigationView = findViewById(R.id.bottom_nav);
-        bottomNavigationView.setSelectedItemId(R.id.nav_profile);
+        bottomNavigationView.setSelectedItemId(R.id.nav_semhas);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -34,8 +34,6 @@ public class ProfilActivity extends AppCompatActivity {
                         return true;
 
                     case R.id.nav_semhas:
-                        startActivity(new Intent(getApplicationContext(),SeminarActivity.class));
-                        overridePendingTransition(0,0);
                         return true;
 
                     case R.id.nav_sidang:
@@ -44,6 +42,8 @@ public class ProfilActivity extends AppCompatActivity {
                         return true;
 
                     case R.id.nav_profile:
+                        startActivity(new Intent(getApplicationContext(),ProfilActivity.class));
+                        overridePendingTransition(0,0);
                         return true;
 
                     case R.id.nav_home:
@@ -55,16 +55,10 @@ public class ProfilActivity extends AppCompatActivity {
                 return false;
             }
         });
-
-
     }
 
-    public void ubahProfil(View view) {
-        Intent intent = new Intent(ProfilActivity.this,activity_ubahprofil.class);
-        startActivity(intent);
-    }
-    public void ubahPasword(View view) {
-        Intent intent = new Intent(ProfilActivity.this,activity_ubahpassword.class);
+    public void TambahPeserta(View view) {
+        Intent intent = new Intent(TambahPesertaActivity.this,PesertaActivity.class);
         startActivity(intent);
     }
 }

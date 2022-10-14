@@ -51,6 +51,7 @@
             android:textAllCaps="false"
             android:textColor="#FFFFFF"
             android:textSize="12sp"
+            android:onClick="detailLogbook"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             tools:ignore="TextContrastCheck" />

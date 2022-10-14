@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -13,6 +14,7 @@ import java.util.ArrayList;
 
 public class ListActivityAdapter extends RecyclerView.Adapter<ListActivityAdapter.ListViewHolder>{
     private ArrayList<ListLbActivity>listActivity;
+
     public ListActivityAdapter(ArrayList<ListLbActivity>list){
         this.listActivity = list;
     }
@@ -30,7 +32,13 @@ public class ListActivityAdapter extends RecyclerView.Adapter<ListActivityAdapte
         ListLbActivity listlb = listActivity.get(position);
         holder.tvTanggal_logbook.setText(listlb.getTanggal());
         holder.tvCtt.setText(listlb.getCatatan());
+
+//        holder.itemView.setOnClickListener(v -> {
+//            Toast.makeText(holder.itemView.getContext(), "Kamu memilih" + listActivity.get(holder.getAdapterPosition()).getCatatan(), Toast.LENGTH_SHORT).show();
+//        });
+
     }
+
 
     @Override
     public int getItemCount() {
