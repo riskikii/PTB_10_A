@@ -8,6 +8,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.ptb_10_a.Adapter.ListPesertaAdapter;
+
 import java.util.ArrayList;
 
 public class PesertaActivity extends AppCompatActivity {

@@ -20,7 +20,7 @@ public class PesertaSemhasActivity extends AppCompatActivity {
     }
 
     public void back(View view) {
-        Intent intent = new Intent(PesertaSemhasActivity.this,TambahPesertaActivity.class);
+        Intent intent = new Intent(PesertaSemhasActivity.this,PesertaActivity.class);
         startActivity(intent);
     }
 }

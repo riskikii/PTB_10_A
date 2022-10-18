@@ -33,19 +33,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
-    <Button
-        android:id="@+id/backAddTA"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="30dp"
-        android:backgroundTint="@color/white"
-        app:icon="@drawable/ic_baseline_arrow_back_ios_24"
-        app:iconTint="#000000"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="SpeakableTextPresentCheck" />
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cardView5"
         android:layout_width="385dp"

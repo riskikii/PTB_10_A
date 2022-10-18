@@ -18,4 +18,9 @@ public class AddSidangActivity extends AppCompatActivity {
             Intent intent = new Intent(AddSidangActivity.this,SidangActivity.class);
             startActivity(intent);
     }
+
+    public void back(View view) {
+        Intent intent = new Intent(AddSidangActivity.this,SidangActivity.class);
+        startActivity(intent);
+    }
 }

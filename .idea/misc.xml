@@ -6,7 +6,7 @@
         <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/drawable/ic_baseline_visibility_24.xml" value="0.351" />
         <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/drawable/ic_baseline_visibility_off_24.xml" value="0.351" />
         <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/activity_add2peserta.xml" value="0.5" />
-        <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/activity_addlogbook.xml" value="0.67" />
+        <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/activity_addlogbook.xml" value="0.22" />
         <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/activity_addpeserta.xml" value="0.25" />
         <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/activity_addseminar.xml" value="0.33" />
         <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/activity_addsidang.xml" value="0.33" />
@@ -14,7 +14,7 @@
         <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/activity_detail_lb.xml" value="0.32222222222222224" />
         <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/activity_detailsemhas.xml" value="0.22" />
         <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/activity_editlogbook.xml" value="0.5" />
-        <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/activity_home.xml" value="0.33" />
+        <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/activity_home.xml" value="0.39893617021276595" />
         <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/activity_jadwalsemhas.xml" value="0.33" />
         <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/activity_logbook.xml" value="0.2971014492753623" />
         <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/activity_login.xml" value="0.32222222222222224" />
@@ -25,7 +25,7 @@
         <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/activity_tambah_peserta.xml" value="0.2" />
         <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/activity_ubahpassword.xml" value="0.25" />
         <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/activity_ubahprofil.xml" value="0.33" />
-        <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/item_row_logbook.xml" value="0.25" />
+        <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/item_row_logbook.xml" value="0.33" />
         <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/layout/item_row_peserta.xml" value="0.33" />
         <entry key="..\:/DOCUMENT MATKUL/Semester 4/PWEB/PTB_10_A/app/src/main/res/menu/bottom_navigation.xml" value="0.1" />
         <entry key="..\:/Users/TAUFIK HIDAYAT/Documents/GitHub/PTB_10_A/app/src/main/res/layout/activity_add2peserta.xml" value="0.22" />
