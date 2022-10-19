@@ -70,7 +70,6 @@
         android:layout_marginTop="10dp"
         android:textColorHint="#8D8D8D"
         app:endIconMode="clear_text"
-
         app:layout_constraintStart_toStartOf="@+id/textView5"
         app:layout_constraintTop_toBottomOf="@+id/textView5">
 
@@ -80,7 +79,6 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/montserrat_regular"
             android:hint="@string/masukkan_nim"
-            android:textAllCaps="false"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textColor="@color/black"
             android:textColorHint="#78909C"
@@ -120,7 +118,6 @@
             android:fontFamily="@font/montserrat_regular"
             android:hint="@string/masukkan_sandi"
             android:inputType="textPassword"
-            android:textAllCaps="false"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textColor="@color/black"
             android:textColorHint="#78909C"

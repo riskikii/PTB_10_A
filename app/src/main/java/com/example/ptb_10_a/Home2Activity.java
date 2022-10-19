@@ -1,22 +1,22 @@
 package com.example.ptb_10_a;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.MenuItem;
+import android.view.View;
 
 import com.example.ptb_10_a.Adapter.ListActivityAdapter;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
 
-public class LogbookActivity extends AppCompatActivity{
+public class Home2Activity extends AppCompatActivity {
+
     private RecyclerView listLogbook;
     private ArrayList<ListLbActivity> list = new ArrayList<>();
 
@@ -25,16 +25,16 @@ public class LogbookActivity extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_logbook);
+        setContentView(R.layout.activity_home2);
 
-        listLogbook = findViewById(R.id.logbookRcv);
+        listLogbook = findViewById(R.id.listLogbook);
         listLogbook.setHasFixedSize(true);
 
         list.addAll(getListLogbooks());
         showRecyclerList();
 
         bottomNavigationView = findViewById(R.id.bottom_nav);
-        bottomNavigationView.setSelectedItemId(R.id.nav_logbook);
+        bottomNavigationView.setSelectedItemId(R.id.nav_home);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -43,6 +43,8 @@ public class LogbookActivity extends AppCompatActivity{
                 switch (item.getItemId())
                 {
                     case R.id.nav_logbook:
+                        startActivity(new Intent(getApplicationContext(),LogbookActivity.class));
+                        overridePendingTransition(0,0);
                         return true;
 
                     case R.id.nav_semhas:
@@ -56,25 +58,31 @@ public class LogbookActivity extends AppCompatActivity{
                         return true;
 
                     case R.id.nav_profile:o:
-                        startActivity(new Intent(getApplicationContext(), ProfilActivity.class));
+                    startActivity(new Intent(getApplicationContext(), ProfilActivity.class));
                         overridePendingTransition(0,0);
                         return true;
 
                     case R.id.nav_home:
-                        startActivity(new Intent(getApplicationContext(), Home2Activity.class));
-                        overridePendingTransition(0,0);
                         return true;
+
                 }
                 return false;
             }
         });
+
+
+    }
+
+    public void daftarTA(View view) {
+        Intent intent = new Intent(Home2Activity.this,AddtaActivity.class);
+        startActivity(intent);
     }
 
     private void showRecyclerList() {
         listLogbook.setLayoutManager(new LinearLayoutManager(this));
-        ListActivityAdapter listActivityAdapter = new ListActivityAdapter(list);
-        listLogbook.setAdapter(listActivityAdapter);
-        listActivityAdapter.setOnItemClickCallback(data -> showSelectedLb(data));
+        ListActivityAdapter listActifityAdapter = new ListActivityAdapter(list);
+        listLogbook.setAdapter(listActifityAdapter);
+        listActifityAdapter.setOnItemClickCallback(data -> showSelectedLb(data));
     }
 
     public ArrayList<ListLbActivity> getListLogbooks(){
@@ -91,7 +99,12 @@ public class LogbookActivity extends AppCompatActivity{
     }
 
     public void tambahLB(View view) {
-        Intent intent = new Intent(LogbookActivity.this,AddlogbookActivity.class);
+        Intent intent = new Intent(Home2Activity.this,AddlogbookActivity.class);
+        startActivity(intent);
+    }
+
+    public void detailLogbook(View view) {
+        Intent intent = new Intent(Home2Activity.this,EditlogbookActivity.class);
         startActivity(intent);
     }
 
@@ -100,12 +113,5 @@ public class LogbookActivity extends AppCompatActivity{
         detailIntent .putExtra("Catatan", listLbActivity.getCatatan());
         detailIntent .putExtra("Tanggal", listLbActivity.getTanggal());
         startActivity(detailIntent);
-
-//        Toast.makeText(this,"kjklkj"+ listLbActivity.getCatatan(), Toast.LENGTH_SHORT).show();
     }
-
-
-
-
-
 }

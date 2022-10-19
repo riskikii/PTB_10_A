@@ -53,7 +53,7 @@
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/rounded_corner2"
-            android:onClick="detailLogbook"
+            android:onClick="EditLogbook"
             android:text="@string/edit"
             android:textAllCaps="false"
             android:textColor="#FFFFFF"

@@ -18,4 +18,9 @@ public class AddtaActivity extends AppCompatActivity {
         Intent intent = new Intent(AddtaActivity.this,HomeActivity.class);
         startActivity(intent);
     }
+
+    public void DaftarTA(View view) {
+        Intent intent = new Intent(AddtaActivity.this,Home2Activity.class);
+        startActivity(intent);
+    }
 }

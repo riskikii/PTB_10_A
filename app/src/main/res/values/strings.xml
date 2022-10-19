@@ -39,6 +39,17 @@
         <item>: 2011521016</item>
         <item>: 2011521001</item>
     </string-array>
+    <integer-array name="foto_peserta">
+        <item>@drawable/ic_baseline_person_24</item>
+        <item>@drawable/ic_baseline_person_24</item>
+        <item>@drawable/ic_baseline_person_24</item>
+        <item>@drawable/ic_baseline_person_24</item>
+        <item>@drawable/ic_baseline_person_24</item>
+        <item>@drawable/ic_baseline_person_24</item>
+        <item>@drawable/ic_baseline_person_24</item>
+        <item>@drawable/ic_baseline_person_24</item>
+        <item>@drawable/ic_baseline_person_24</item>
+    </integer-array>
 
 
     <string name="app_name">PTB_10_A</string>

@@ -5,11 +5,13 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.view.View;
 
 import com.example.ptb_10_a.Adapter.ListPesertaAdapter;
 
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 
 public class PesertaActivity extends AppCompatActivity {
@@ -38,11 +40,15 @@ public class PesertaActivity extends AppCompatActivity {
     public ArrayList<ListPeserta> getListLogbooks(){
         String[] nama_peserta = getResources().getStringArray(R.array.nama_peserta);
         String[] nim_peseerta = getResources().getStringArray(R.array.nim_peserta);
+        TypedArray foto_peserta = getResources().obtainTypedArray(R.array.foto_peserta);
+
         ArrayList <ListPeserta> listPesertaSd = new ArrayList<>();
         for (int i = 0; i < nama_peserta.length; i++) {
             ListPeserta listPeserta = new ListPeserta();
             listPeserta.setNama_peserta(nama_peserta[i]);
             listPeserta.setNim_peserta(nim_peseerta[i]);
+            listPeserta.setFoto(foto_peserta.getResourceId(i, -1));
+
             listPesertaSd.add(listPeserta);
         }
         return listPesertaSd;

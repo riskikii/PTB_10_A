@@ -3,6 +3,7 @@ package com.example.ptb_10_a.Adapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -30,6 +31,7 @@ public class ListPesertaAdapter extends RecyclerView.Adapter<ListPesertaAdapter.
     @Override
     public void onBindViewHolder(@NonNull ListViewHolder holder, int position) {
         ListPeserta listpeserta = listPeserta.get(position);
+        holder.imgFoto.setImageResource(listpeserta.getFoto());
         holder.tvNamaPeserta.setText(listpeserta.getNama_peserta());
         holder.tvNim.setText(listpeserta.getNim_peserta());
     }
@@ -41,11 +43,13 @@ public class ListPesertaAdapter extends RecyclerView.Adapter<ListPesertaAdapter.
 
     public class ListViewHolder extends RecyclerView.ViewHolder{
         TextView tvNamaPeserta, tvNim;
+        ImageView imgFoto;
 
         public ListViewHolder(@NonNull View itemView) {
             super(itemView);
             tvNamaPeserta = itemView.findViewById(R.id.namaPeserta);
             tvNim = itemView.findViewById(R.id.nimPeserta);
+            imgFoto = itemView.findViewById(R.id.fotoPeserta);
         }
     }
 }

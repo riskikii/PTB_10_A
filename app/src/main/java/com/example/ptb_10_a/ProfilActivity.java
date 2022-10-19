@@ -47,7 +47,7 @@ public class ProfilActivity extends AppCompatActivity {
                         return true;
 
                     case R.id.nav_home:
-                        startActivity(new Intent(getApplicationContext(),HomeActivity.class));
+                        startActivity(new Intent(getApplicationContext(),Home2Activity.class));
                         overridePendingTransition(0,0);
                         return true;
 

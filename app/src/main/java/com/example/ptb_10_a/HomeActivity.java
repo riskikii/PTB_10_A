@@ -19,7 +19,6 @@ public class HomeActivity extends AppCompatActivity {
     private RecyclerView listLogbook;
     private ArrayList<ListLbActivity> list = new ArrayList<>();
 
-
     BottomNavigationView bottomNavigationView;
 
     @Override
@@ -82,6 +81,7 @@ public class HomeActivity extends AppCompatActivity {
         listLogbook.setLayoutManager(new LinearLayoutManager(this));
         ListActivityAdapter listActifityAdapter = new ListActivityAdapter(list);
         listLogbook.setAdapter(listActifityAdapter);
+        listActifityAdapter.setOnItemClickCallback(data -> showSelectedLb(data));
     }
 
     public ArrayList<ListLbActivity> getListLogbooks(){
@@ -105,5 +105,12 @@ public class HomeActivity extends AppCompatActivity {
     public void detailLogbook(View view) {
         Intent intent = new Intent(HomeActivity.this,EditlogbookActivity.class);
         startActivity(intent);
+    }
+
+    private void showSelectedLb(ListLbActivity listLbActivity) {
+        Intent detailIntent = new Intent(this, EditlogbookActivity.class);
+        detailIntent .putExtra("Catatan", listLbActivity.getCatatan());
+        detailIntent .putExtra("Tanggal", listLbActivity.getTanggal());
+        startActivity(detailIntent);
     }
 }
