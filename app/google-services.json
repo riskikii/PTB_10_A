@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "446046146919",
+    "project_id": "notification-ptb10a",
+    "storage_bucket": "notification-ptb10a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:446046146919:android:38be079b91318dd1675fc2",
+        "android_client_info": {
+          "package_name": "com.example.ptb_10_a"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "446046146919-vkcvk8sope37nrofbpdogaddtg4te8s0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhgUkg6CZSo4kK1_IciiFhts4nnbIvfJ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "446046146919-vkcvk8sope37nrofbpdogaddtg4te8s0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

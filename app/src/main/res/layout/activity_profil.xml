@@ -10,7 +10,7 @@
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/circleImageView"
         android:layout_width="120dp"
-        android:layout_height="120dp"
+        android:layout_height="115dp"
         android:layout_marginTop="80dp"
         android:src="@drawable/gambar_profil"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,7 +34,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView25"
+        android:id="@+id/viewNama"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -46,7 +46,7 @@
         app:layout_constraintTop_toBottomOf="@+id/circleImageView" />
 
     <EditText
-        android:id="@+id/editTextTextMultiLine"
+        android:id="@+id/textNim"
         android:layout_width="350dp"
         android:layout_height="39dp"
         android:ems="10"
@@ -60,31 +60,14 @@
         android:editable="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView26"
+        app:layout_constraintTop_toBottomOf="@+id/viewNim"
         tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
 
     <EditText
-        android:id="@+id/editTextTextMultiLine2"
+        android:id="@+id/textEmail"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:fontFamily="@font/montserrat_regular"
-        android:gravity="start|top"
-        android:hint="@string/s1_sistem_informasi"
-        android:importantForAutofill="no"
-        android:inputType="none"
-        android:textColor="#070707"
-        android:textSize="16sp"
         android:editable="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView27"
-        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
-
-    <EditText
-        android:id="@+id/editTextTextMultiLine3"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
         android:ems="10"
         android:fontFamily="@font/montserrat_regular"
         android:gravity="start|top"
@@ -93,48 +76,26 @@
         android:inputType="none"
         android:textColor="#070707"
         android:textSize="16sp"
-        android:editable="false"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView28"
         tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 
-    <EditText
-        android:id="@+id/editTextTextMultiLine4"
-        android:layout_width="350dp"
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:fontFamily="@font/montserrat_regular"
-        android:gravity="start|top"
-        android:hint="@string/jl_kasturi_1_no_31a"
-        android:importantForAutofill="no"
-        android:inputType="textMultiLine"
-        android:textColor="#070707"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montserratbold"
+        android:text="@string/e_mail"
+        android:textColor="#090909"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView29"
-        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
-
-    <EditText
-        android:id="@+id/editTextTextMultiLine5"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:fontFamily="@font/montserrat_regular"
-        android:gravity="start|top"
-        android:hint="@string/_082311303597"
-        android:importantForAutofill="no"
-        android:inputType="textMultiLine"
-        android:textColor="#040404"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView30"
-        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+        app:layout_constraintTop_toBottomOf="@+id/textNim" />
 
     <TextView
-        android:id="@+id/textView26"
+        android:id="@+id/viewNim"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="45dp"
@@ -143,67 +104,19 @@
         android:text="@string/nim4"
         android:textColor="#070707"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView25" />
-
-    <TextView
-        android:id="@+id/textView27"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="10dp"
-        android:fontFamily="@font/montserratbold"
-        android:text="@string/program_studi"
-        android:textColor="#050505"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
-
-    <TextView
-        android:id="@+id/textView28"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="10dp"
-        android:fontFamily="@font/montserratbold"
-        android:text="@string/jenis_kelamin"
-        android:textColor="#090909"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine2" />
-
-    <TextView
-        android:id="@+id/textView29"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="10dp"
-        android:fontFamily="@font/montserratbold"
-        android:text="@string/alamat"
-        android:textColor="#050505"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine3" />
-
-    <TextView
-        android:id="@+id/textView30"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="10dp"
-        android:fontFamily="@font/montserratbold"
-        android:text="@string/no_hp"
-        android:textColor="#090909"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine4" />
+        app:layout_constraintTop_toBottomOf="@+id/viewNama" />
 
     <Button
         android:id="@+id/ajukanSemhas"
         android:layout_width="200dp"
         android:layout_height="40dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="43dp"
         android:layout_marginEnd="42dp"
         android:background="@drawable/rounded_corner"
-        android:text="@string/ubah_profil"
         android:onClick="ubahProfil"
+        android:text="@string/ubah_profil"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine5"
+        app:layout_constraintTop_toBottomOf="@+id/textEmail"
         tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 
     <Button
@@ -228,5 +141,15 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:menu="@menu/bottom_navigation"
         tools:layout_editor_absoluteX="-1dp" />
+
+    <ImageView
+        android:id="@+id/btnLogout"
+        android:layout_width="66dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logout_ic" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
