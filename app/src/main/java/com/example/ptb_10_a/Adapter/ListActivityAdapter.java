@@ -37,11 +37,8 @@ public class ListActivityAdapter extends RecyclerView.Adapter<ListActivityAdapte
         ListLbActivity listlb = listActivity.get(position);
         holder.tvTanggal_logbook.setText(listlb.getTanggal());
         holder.tvCtt.setText(listlb.getCatatan());
-
         holder.editlogbook.setOnClickListener(v -> onItemClickCallback.onItemClicked(listActivity.get(holder.getAdapterPosition())));
-
     }
-
 
     @Override
     public int getItemCount() {

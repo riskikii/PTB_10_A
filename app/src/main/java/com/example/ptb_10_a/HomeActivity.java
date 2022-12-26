@@ -5,20 +5,38 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.Toast;
+import android.widget.Toolbar;
 
 import com.example.ptb_10_a.Adapter.ListActivityAdapter;
+import com.example.ptb_10_a.models.LogoutResponse;
+import com.example.ptb_10_a.retrofit.InterfaceMahasiswa;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.snackbar.Snackbar;
 
 import java.util.ArrayList;
+
+import okhttp3.OkHttpClient;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 public class HomeActivity extends AppCompatActivity {
     private RecyclerView listLogbook;
     private ArrayList<ListLbActivity> list = new ArrayList<>();
 
+    SharedPreferences sharedPref;
     BottomNavigationView bottomNavigationView;
 
     @Override
