@@ -52,7 +52,6 @@ public class ProfilActivity extends AppCompatActivity {
 
         String token = sharedPref.getString("TOKEN", "");
         String username = sharedPref.getString("USERNAME", "");
-        String password = sharedPref.getString("PASSWORD", "");
         String name = sharedPref.getString("NAME", "");
         String email = sharedPref.getString("EMAIL", "");
 
