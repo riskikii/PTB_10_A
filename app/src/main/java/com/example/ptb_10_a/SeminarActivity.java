@@ -50,7 +50,7 @@ public class SeminarActivity extends AppCompatActivity {
                         return true;
 
                     case R.id.nav_home:
-                        startActivity(new Intent(getApplicationContext(),Home3Activity.class));
+                        startActivity(new Intent(getApplicationContext(),Home2Activity.class));
                         overridePendingTransition(0,0);
                         return true;
 
@@ -63,6 +63,7 @@ public class SeminarActivity extends AppCompatActivity {
         Intent intent = new Intent(SeminarActivity.this,AddSeminarActivity.class);
         startActivity(intent);
     }
+    
 
     public void kembali(View view) {
         Intent intent = new Intent(SeminarActivity.this,Home3Activity.class);
