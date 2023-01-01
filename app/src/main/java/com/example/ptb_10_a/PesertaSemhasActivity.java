@@ -11,7 +11,7 @@ public class PesertaSemhasActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_addpeserta);
+        setContentView(R.layout.activity_addpesertasemhas);
     }
 
     public void TambahPeserta(View view) {
