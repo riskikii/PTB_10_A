@@ -48,7 +48,6 @@ public class HomeActivity extends AppCompatActivity {
         listLogbook.setHasFixedSize(true);
 
         list.addAll(getListLogbooks());
-        showRecyclerList();
 
         bottomNavigationView = findViewById(R.id.bottom_nav);
         bottomNavigationView.setSelectedItemId(R.id.nav_home);
@@ -93,13 +92,6 @@ public class HomeActivity extends AppCompatActivity {
     public void daftarTA(View view) {
         Intent intent = new Intent(HomeActivity.this,AddtaActivity.class);
         startActivity(intent);
-    }
-
-    private void showRecyclerList() {
-        listLogbook.setLayoutManager(new LinearLayoutManager(this));
-        ListActivityAdapter listActifityAdapter = new ListActivityAdapter(list);
-        listLogbook.setAdapter(listActifityAdapter);
-        listActifityAdapter.setOnItemClickCallback(data -> showSelectedLb(data));
     }
 
     public ArrayList<ListLbActivity> getListLogbooks(){

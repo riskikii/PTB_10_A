@@ -11,17 +11,26 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.ptb_10_a.ListLbActivity;
 import com.example.ptb_10_a.R;
+import com.example.ptb_10_a.models.LogbooksItem;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class ListActivityAdapter extends RecyclerView.Adapter<ListActivityAdapter.ListViewHolder>{
-    private ArrayList<ListLbActivity>listActivity;
+    private List<LogbooksItem> itemList = new ArrayList<>();
 
-    public ListActivityAdapter(ArrayList<ListLbActivity>list){
-        this.listActivity = list;
+    public void setItemList(List<LogbooksItem>itemList){
+        this.itemList = itemList;
+        notifyDataSetChanged();
     }
 
     private OnItemClickCallback onItemClickCallback;
+
+    public ListActivityAdapter() {
+
+    }
+
+
     public void setOnItemClickCallback(OnItemClickCallback onItemClickCallback) {
         this.onItemClickCallback = onItemClickCallback;
     }
@@ -34,15 +43,14 @@ public class ListActivityAdapter extends RecyclerView.Adapter<ListActivityAdapte
 
     @Override
     public void onBindViewHolder(@NonNull final ListViewHolder holder, int position) {
-        ListLbActivity listlb = listActivity.get(position);
-        holder.tvTanggal_logbook.setText(listlb.getTanggal());
-        holder.tvCtt.setText(listlb.getCatatan());
-        holder.editlogbook.setOnClickListener(v -> onItemClickCallback.onItemClicked(listActivity.get(holder.getAdapterPosition())));
+        final LogbooksItem listlb = itemList.get(position);
+        holder.tvTanggal_logbook.setText(listlb.getDate());
+        holder.tvCtt.setText(listlb.getProgress());
     }
 
     @Override
     public int getItemCount() {
-        return listActivity.size();
+        return itemList.size();
     }
 
     public class ListViewHolder extends RecyclerView.ViewHolder{
