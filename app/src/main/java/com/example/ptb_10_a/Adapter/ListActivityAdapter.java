@@ -13,7 +13,10 @@ import com.example.ptb_10_a.ListLbActivity;
 import com.example.ptb_10_a.R;
 import com.example.ptb_10_a.models.LogbooksItem;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class ListActivityAdapter extends RecyclerView.Adapter<ListActivityAdapter.ListViewHolder>{
@@ -25,15 +28,12 @@ public class ListActivityAdapter extends RecyclerView.Adapter<ListActivityAdapte
     }
 
     private OnItemClickCallback onItemClickCallback;
-
-    public ListActivityAdapter() {
-
-    }
-
-
+//    public ListActivityAdapter() {
+//    }
     public void setOnItemClickCallback(OnItemClickCallback onItemClickCallback) {
         this.onItemClickCallback = onItemClickCallback;
     }
+
     @NonNull
     @Override
     public ListViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -46,6 +46,7 @@ public class ListActivityAdapter extends RecyclerView.Adapter<ListActivityAdapte
         final LogbooksItem listlb = itemList.get(position);
         holder.tvTanggal_logbook.setText(listlb.getDate());
         holder.tvCtt.setText(listlb.getProgress());
+        holder.editlogbook.setOnClickListener(v -> onItemClickCallback.onItemClicked(itemList.get(holder.getAdapterPosition())));
     }
 
     @Override
@@ -57,8 +58,20 @@ public class ListActivityAdapter extends RecyclerView.Adapter<ListActivityAdapte
         TextView tvTanggal_logbook, tvCtt;
         Button editlogbook;
 
+//        String startDateString = tvTanggal_logbook.getText().toString();
+//        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'");
+//        Date date;
+//        {
+//            try {
+//                date = format.parse(startDateString);
+//            } catch (ParseException e) {
+//                e.printStackTrace();
+//            }
+//        }
+
         public ListViewHolder(@NonNull View itemView) {
             super(itemView);
+
             editlogbook = itemView.findViewById(R.id.EditLogbook);
             tvTanggal_logbook = itemView.findViewById(R.id.tanggalLogbook);
             tvCtt = itemView.findViewById(R.id.CttLogbook);
@@ -66,6 +79,6 @@ public class ListActivityAdapter extends RecyclerView.Adapter<ListActivityAdapte
     }
 
     public interface OnItemClickCallback {
-        void onItemClicked(ListLbActivity data);
+        void onItemClicked(LogbooksItem data);
     }
 }

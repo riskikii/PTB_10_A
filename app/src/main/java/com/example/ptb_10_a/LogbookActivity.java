@@ -52,30 +52,10 @@ public class LogbookActivity extends AppCompatActivity{
 
         adapter = new ListActivityAdapter();
         listLogbook.setAdapter(adapter);
+        adapter.setOnItemClickCallback(data -> showSelectedLb(data));
 
         interfaceMahasiswa = APIClient.getClient().create(InterfaceMahasiswa.class);
         sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
-        String token = sharedPref.getString("TOKEN", "");
-
-        Call<LogbooksResponse> call = interfaceMahasiswa.getLB("Bearer " +token);
-        call.enqueue(new Callback<LogbooksResponse>() {
-            @Override
-            public void onResponse(Call<LogbooksResponse> call, Response<LogbooksResponse> response) {
-                Log.d("Logbook_Debug", response.toString());
-
-                LogbooksResponse logbooksResponse = response.body();
-                if (logbooksResponse != null){
-                    List<LogbooksItem> logbooks = logbooksResponse.getLogbooks();
-                    Log.d("Debug2", String.valueOf(logbooks.size()));
-                    adapter.setItemList(logbooks);
-                }
-            }
-
-            @Override
-            public void onFailure(Call<LogbooksResponse> call, Throwable t) {
-
-            }
-        });
 
         bottomNavigationView = findViewById(R.id.bottom_nav);
         bottomNavigationView.setSelectedItemId(R.id.nav_logbook);
@@ -114,6 +94,37 @@ public class LogbookActivity extends AppCompatActivity{
         });
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        getAllLb();
+
+    }
+
+    private void getAllLb() {
+        String token = sharedPref.getString("TOKEN", "");
+        Call<LogbooksResponse> call = interfaceMahasiswa.getLB("Bearer " +token);
+        call.enqueue(new Callback<LogbooksResponse>() {
+            @Override
+            public void onResponse(Call<LogbooksResponse> call, Response<LogbooksResponse> response) {
+                Log.d("Logbook_Debug", response.toString());
+
+                LogbooksResponse logbooksResponse = response.body();
+                if (logbooksResponse != null){
+                    List<LogbooksItem> logbooks = logbooksResponse.getLogbooks();
+                    Log.d("Debug2", String.valueOf(logbooks.size()));
+                    adapter.setItemList(logbooks);
+                }
+            }
+
+            @Override
+            public void onFailure(Call<LogbooksResponse> call, Throwable t) {
+
+            }
+        });
+
+    }
+
     public ArrayList<ListLbActivity> getListLogbooks(){
         String[] tanggal_logbook = getResources().getStringArray(R.array.tanggal_logbook);
         String[] catatan_logbook = getResources().getStringArray(R.array.catatan_logbook);
@@ -132,13 +143,11 @@ public class LogbookActivity extends AppCompatActivity{
         startActivity(intent);
     }
 
-    private void showSelectedLb(ListLbActivity listLbActivity) {
+    private void showSelectedLb(LogbooksItem logbooksItem) {
         Intent detailIntent = new Intent(this, EditlogbookActivity.class);
-        detailIntent .putExtra("Catatan", listLbActivity.getCatatan());
-        detailIntent .putExtra("Tanggal", listLbActivity.getTanggal());
+        detailIntent .putExtra("Catatan", logbooksItem.getProgress());
+        detailIntent .putExtra("Tanggal", logbooksItem.getDate());
         startActivity(detailIntent);
-
-//        Toast.makeText(this,"kjklkj"+ listLbActivity.getCatatan(), Toast.LENGTH_SHORT).show();
     }
 
 
