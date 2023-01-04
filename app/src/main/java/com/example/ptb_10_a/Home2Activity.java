@@ -31,7 +31,6 @@ public class Home2Activity extends AppCompatActivity {
         listLogbook.setHasFixedSize(true);
 
         list.addAll(getListLogbooks());
-        showRecyclerList();
 
         bottomNavigationView = findViewById(R.id.bottom_nav);
         bottomNavigationView.setSelectedItemId(R.id.nav_home);
@@ -78,12 +77,6 @@ public class Home2Activity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private void showRecyclerList() {
-        listLogbook.setLayoutManager(new LinearLayoutManager(this));
-        ListActivityAdapter listActifityAdapter = new ListActivityAdapter(list);
-        listLogbook.setAdapter(listActifityAdapter);
-        listActifityAdapter.setOnItemClickCallback(data -> showSelectedLb(data));
-    }
 
     public ArrayList<ListLbActivity> getListLogbooks(){
         String[] tanggal_logbook = getResources().getStringArray(R.array.tanggal_logbook);

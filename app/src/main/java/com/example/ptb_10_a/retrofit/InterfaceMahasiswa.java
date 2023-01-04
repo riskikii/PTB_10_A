@@ -1,8 +1,10 @@
 package com.example.ptb_10_a.retrofit;
 
+import com.example.ptb_10_a.models.LogbooksResponse;
 import com.example.ptb_10_a.models.LoginResponse;
 import com.example.ptb_10_a.models.LogoutResponse;
 import com.example.ptb_10_a.models.ProfileResponse;
+import com.example.ptb_10_a.models.TmbhLBResponse;
 import com.example.ptb_10_a.models.UbahPassword;
 import com.example.ptb_10_a.models.UpdateProfilResponse;
 
@@ -24,13 +26,10 @@ public interface InterfaceMahasiswa {
 
     @POST("api/logout/")
     Call<LogoutResponse> logout(@Header("token")String token);
+    @GET ("api/theses/309/logbooks")
+    Call<LogbooksResponse> getLB(@Header("Authorization") String token);
 
     @FormUrlEncoded
-    @POST("/api/password")
-    Call<UbahPassword> UbahPassword(@Header("Authorization") String token, @Field("old_password") String old_password, @Field("new_password") String new_password, @Field("confirm_password") String confirm_password);
+    @POST ("api/theses/309/logbooks")
+    Call<TmbhLBResponse>postLB(@Field("supervisor_id") Integer supervisor_id,@Field("date") String date, @Field("progress")String progress);
 
-    @FormUrlEncoded
-    @POST("/api/me/update")
-    Call<UpdateProfilResponse> updateProfile(@Header("Authorization") String token, @Field("email") String email, @Field("name") String name);
-
-}
