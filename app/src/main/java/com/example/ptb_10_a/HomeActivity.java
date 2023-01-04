@@ -36,7 +36,6 @@ public class HomeActivity extends AppCompatActivity {
     private RecyclerView listLogbook;
     private ArrayList<ListLbActivity> list = new ArrayList<>();
 
-    SharedPreferences sharedPref;
     BottomNavigationView bottomNavigationView;
 
     @Override

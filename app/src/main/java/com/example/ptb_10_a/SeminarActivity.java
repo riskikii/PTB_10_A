@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+
 import android.view.View;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -18,12 +19,14 @@ public class SeminarActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_seminar);
+        
 
         bottomNavigationView = findViewById(R.id.bottom_nav);
         bottomNavigationView.setSelectedItemId(R.id.nav_semhas);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
+            
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
                 switch (item.getItemId())
@@ -60,9 +63,10 @@ public class SeminarActivity extends AppCompatActivity {
         Intent intent = new Intent(SeminarActivity.this,AddSeminarActivity.class);
         startActivity(intent);
     }
+    
 
     public void kembali(View view) {
-        Intent intent = new Intent(SeminarActivity.this,Home2Activity.class);
+        Intent intent = new Intent(SeminarActivity.this,Home3Activity.class);
         startActivity(intent);
     }
 }

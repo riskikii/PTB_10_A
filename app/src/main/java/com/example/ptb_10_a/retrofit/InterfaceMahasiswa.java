@@ -5,6 +5,8 @@ import com.example.ptb_10_a.models.LoginResponse;
 import com.example.ptb_10_a.models.LogoutResponse;
 import com.example.ptb_10_a.models.ProfileResponse;
 import com.example.ptb_10_a.models.TmbhLBResponse;
+import com.example.ptb_10_a.models.UbahPassword;
+import com.example.ptb_10_a.models.UpdateProfilResponse;
 
 import retrofit2.Call;
 import retrofit2.http.Field;
@@ -24,11 +26,10 @@ public interface InterfaceMahasiswa {
 
     @POST("api/logout/")
     Call<LogoutResponse> logout(@Header("token")String token);
-
     @GET ("api/theses/309/logbooks")
     Call<LogbooksResponse> getLB(@Header("Authorization") String token);
 
     @FormUrlEncoded
     @POST ("api/theses/309/logbooks")
     Call<TmbhLBResponse>postLB(@Field("supervisor_id") Integer supervisor_id,@Field("date") String date, @Field("progress")String progress);
-}
+
