@@ -8,7 +8,25 @@ public class Logbook{
     private String date;
 
     @SerializedName("thesis_id")
-    private String thesisId;
+    private int thesisId;
+
+    @SerializedName("notes")
+    private Object notes;
+
+    @SerializedName("supervisor_id")
+    private int supervisorId;
+
+    @SerializedName("created_at")
+    private String createdAt;
+
+    @SerializedName("supervised_at")
+    private Object supervisedAt;
+
+    @SerializedName("file_progress")
+    private Object fileProgress;
+
+    @SerializedName("supervised_by")
+    private Object supervisedBy;
 
     @SerializedName("problem")
     private String problem;
@@ -16,14 +34,11 @@ public class Logbook{
     @SerializedName("updated_at")
     private String updatedAt;
 
-    @SerializedName("supervisor_id")
-    private String supervisorId;
-
     @SerializedName("progress")
     private String progress;
 
-    @SerializedName("created_at")
-    private String createdAt;
+    @SerializedName("file_notes")
+    private Object fileNotes;
 
     @SerializedName("id")
     private int id;
@@ -35,8 +50,32 @@ public class Logbook{
         return date;
     }
 
-    public String getThesisId(){
+    public int getThesisId(){
         return thesisId;
+    }
+
+    public Object getNotes(){
+        return notes;
+    }
+
+    public int getSupervisorId(){
+        return supervisorId;
+    }
+
+    public String getCreatedAt(){
+        return createdAt;
+    }
+
+    public Object getSupervisedAt(){
+        return supervisedAt;
+    }
+
+    public Object getFileProgress(){
+        return fileProgress;
+    }
+
+    public Object getSupervisedBy(){
+        return supervisedBy;
     }
 
     public String getProblem(){
@@ -47,16 +86,12 @@ public class Logbook{
         return updatedAt;
     }
 
-    public String getSupervisorId(){
-        return supervisorId;
-    }
-
     public String getProgress(){
         return progress;
     }
 
-    public String getCreatedAt(){
-        return createdAt;
+    public Object getFileNotes(){
+        return fileNotes;
     }
 
     public int getId(){

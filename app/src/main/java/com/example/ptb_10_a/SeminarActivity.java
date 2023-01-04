@@ -66,7 +66,7 @@ public class SeminarActivity extends AppCompatActivity {
     
 
     public void kembali(View view) {
-        Intent intent = new Intent(SeminarActivity.this,Home3Activity.class);
+        Intent intent = new Intent(SeminarActivity.this,Home2Activity.class);
         startActivity(intent);
     }
 }

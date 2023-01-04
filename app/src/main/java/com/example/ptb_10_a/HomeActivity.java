@@ -18,12 +18,16 @@ import android.widget.Toast;
 import android.widget.Toolbar;
 
 import com.example.ptb_10_a.Adapter.ListActivityAdapter;
+import com.example.ptb_10_a.models.LogbooksItem;
+import com.example.ptb_10_a.models.LogbooksResponse;
 import com.example.ptb_10_a.models.LogoutResponse;
+import com.example.ptb_10_a.retrofit.APIClient;
 import com.example.ptb_10_a.retrofit.InterfaceMahasiswa;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.snackbar.Snackbar;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import okhttp3.OkHttpClient;
 import retrofit2.Call;
@@ -34,9 +38,13 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class HomeActivity extends AppCompatActivity {
     private RecyclerView listLogbook;
+    private ListActivityAdapter adapter;
     private ArrayList<ListLbActivity> list = new ArrayList<>();
 
     BottomNavigationView bottomNavigationView;
+
+    SharedPreferences sharedPref;
+    InterfaceMahasiswa interfaceMahasiswa;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +55,14 @@ public class HomeActivity extends AppCompatActivity {
         listLogbook.setHasFixedSize(true);
 
         list.addAll(getListLogbooks());
+        listLogbook.setLayoutManager(new LinearLayoutManager(this));
+
+        adapter = new ListActivityAdapter();
+        listLogbook.setAdapter(adapter);
+        adapter.setOnItemClickCallback(data -> showSelectedLb(data));
+
+        interfaceMahasiswa = APIClient.getClient().create(InterfaceMahasiswa.class);
+        sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
 
         bottomNavigationView = findViewById(R.id.bottom_nav);
         bottomNavigationView.setSelectedItemId(R.id.nav_home);
@@ -84,8 +100,36 @@ public class HomeActivity extends AppCompatActivity {
                 return false;
             }
         });
+    }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        getAllLb();
 
+    }
+
+    private void getAllLb() {
+        String token = sharedPref.getString("TOKEN", "");
+        Call<LogbooksResponse> call = interfaceMahasiswa.getLB("Bearer " +token);
+        call.enqueue(new Callback<LogbooksResponse>() {
+            @Override
+            public void onResponse(Call<LogbooksResponse> call, Response<LogbooksResponse> response) {
+                Log.d("Logbook_Debug", response.toString());
+
+                LogbooksResponse logbooksResponse = response.body();
+                if (logbooksResponse != null){
+                    List<LogbooksItem> logbooks = logbooksResponse.getLogbooks();
+                    Log.d("Debug2", String.valueOf(logbooks.size()));
+                    adapter.setItemList(logbooks);
+                }
+            }
+
+            @Override
+            public void onFailure(Call<LogbooksResponse> call, Throwable t) {
+
+            }
+        });
     }
 
     public void daftarTA(View view) {
@@ -116,10 +160,10 @@ public class HomeActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private void showSelectedLb(ListLbActivity listLbActivity) {
+    private void showSelectedLb(LogbooksItem logbooksItem) {
         Intent detailIntent = new Intent(this, EditlogbookActivity.class);
-        detailIntent .putExtra("Catatan", listLbActivity.getCatatan());
-        detailIntent .putExtra("Tanggal", listLbActivity.getTanggal());
+        detailIntent .putExtra("Catatan", logbooksItem.getProgress());
+        detailIntent .putExtra("Tanggal", logbooksItem.getDate());
         startActivity(detailIntent);
     }
 }
