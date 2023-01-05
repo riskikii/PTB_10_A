@@ -44,8 +44,9 @@ public interface InterfaceMahasiswa {
             @Field("nim") String nim,
             @Field("name") String name);
 
-
-
-
     Call<UpdateProfilResponse> updateProfile(String s, String email, String nama);
+
+    @GET("api/thesis/seminars/312/audiences")
+    Call<ListpesertasemhasResponse> getPesertasemhas(@Header("Authorization") String token);
+
 }

@@ -7,6 +7,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
 import com.example.ptb_10_a.retrofit.APIClient;
 import com.example.ptb_10_a.retrofit.InterfaceMahasiswa;
@@ -28,13 +29,13 @@ public class PesertaSemhasActivity extends AppCompatActivity {
 
         InterfaceMahasiswa interfaceMahasiswa = APIClient.getClient().create(InterfaceMahasiswa.class);
 
-//        SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences("com.kelompok_15.tb_ptb.SHARED_KEY", MODE_PRIVATE);
-//        gettoken = sharedPreferences.getString("token", "");
-//        token = "Bearer " + gettoken;
-////            Toast.makeText(DetailTaMahasiswa.this, token, Toast.LENGTH_SHORT).show();
-//        Log.e("Token", token);
+      SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences("com.kelompok_15.tb_ptb.SHARED_KEY", MODE_PRIVATE);
+        gettoken = sharedPreferences.getString("token", "");
+        token = "Bearer " + gettoken;
+        Toast.makeText(PesertaSemhasActivity.this, token, Toast.LENGTH_SHORT).show();
+        Log.e("Token", token);
 
-        Call<ListpesertasemhasResponse> call = interfaceMahasiswa.Tambahpeserta("nim","nama");
+        Call<ListpesertasemhasResponse> call = interfaceMahasiswa.getPesertasemhas(token);
         call.enqueue(new Callback<ListpesertasemhasResponse>() {
             @Override
             public void onResponse(Call<ListpesertasemhasResponse> call, Response<ListpesertasemhasResponse> response) {

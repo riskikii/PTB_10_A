@@ -5,17 +5,32 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.TypedArray;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
+import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
 import com.example.ptb_10_a.Adapter.ListPesertaAdapter;
+import com.example.ptb_10_a.retrofit.APIClient;
+import com.example.ptb_10_a.retrofit.InterfaceMahasiswa;
+import com.example.ptb_10_a.retrofit.Listpesertasemhas.ListpesertasemhasResponse;
+import com.example.ptb_10_a.retrofit.Listpesertasemhas.AudiencesItem;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
+import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class PesertaActivity extends AppCompatActivity {
     private RecyclerView listPeserta;
+    private RecyclerView rvPeserta;
+    String gettoken,token;
     private ArrayList<ListPeserta> list = new ArrayList<>();
 
     @Override
@@ -23,19 +38,58 @@ public class PesertaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_peserta);
 
-        listPeserta = findViewById(R.id.daftarPeserta);
-        listPeserta.setHasFixedSize(true);
+//        listPeserta = findViewById(R.id.daftarPeserta);
+//        listPeserta.setHasFixedSize(true);
 
-        list.addAll(getListLogbooks());
-        showRecyclerList();
+//        list.addAll(getListLogbooks());
+//        showRecyclerList();
+
+        rvPeserta = findViewById(R.id.daftarPeserta);
+
+        ListPesertaAdapter adapter = new ListPesertaAdapter();
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+
+        rvPeserta.setLayoutManager(layoutManager);
+        rvPeserta.setAdapter(adapter);
+
+
+        InterfaceMahasiswa interfaceMahasiswa = APIClient.getClient().create(InterfaceMahasiswa.class);
+
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+        gettoken = sharedPreferences.getString("TOKEN", "");
+        token = "Bearer " + gettoken;
+        Toast.makeText(PesertaActivity.this, token, Toast.LENGTH_SHORT).show();
+        Log.e("Token", token);
+
+        Call<ListpesertasemhasResponse> call = interfaceMahasiswa.getPesertasemhas(token);
+        call.enqueue(new Callback<ListpesertasemhasResponse>() {
+            @Override
+            public void onResponse(Call<ListpesertasemhasResponse> call, Response<ListpesertasemhasResponse> response) {
+                Toast.makeText(PesertaActivity.this, "BerHasil Mendapatkan Data", Toast.LENGTH_SHORT).show();
+                Log.d("PesertaActivity-Debug", response.toString());
+                ListpesertasemhasResponse getListPesertaSemhasResponse = response.body();
+                if (getListPesertaSemhasResponse != null) {
+                    List<AudiencesItem> listAudiences = getListPesertaSemhasResponse.getAudiences();
+
+                    Log.d("PesertaActivity-Debug", String.valueOf(listAudiences.size()));
+                    adapter.setItemAudiences(listAudiences);
+                }
+            }
+
+            @Override
+            public void onFailure(Call<ListpesertasemhasResponse> call, Throwable t) {
+                Log.e("Suc", t.getLocalizedMessage());
+            }
+        });
+
 
     }
 
-    private void showRecyclerList() {
-        listPeserta.setLayoutManager(new LinearLayoutManager(this));
-        ListPesertaAdapter listPesertaAdapter = new ListPesertaAdapter(list);
-        listPeserta.setAdapter(listPesertaAdapter);
-    }
+//    private void showRecyclerList() {
+//        listPeserta.setLayoutManager(new LinearLayoutManager(this));
+//        ListPesertaAdapter listPesertaAdapter = new ListPesertaAdapter(list);
+//        listPeserta.setAdapter(listPesertaAdapter);
+//    }
 
     public ArrayList<ListPeserta> getListLogbooks(){
         String[] nama_peserta = getResources().getStringArray(R.array.nama_peserta);
