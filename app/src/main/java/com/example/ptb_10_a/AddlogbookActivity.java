@@ -16,7 +16,11 @@ import com.example.ptb_10_a.models.TmbhLBResponse;
 import com.example.ptb_10_a.retrofit.APIClient;
 import com.example.ptb_10_a.retrofit.InterfaceMahasiswa;
 
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -74,23 +78,25 @@ public class AddlogbookActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void tambahLogbooks(View view) {
+    public void tambahLogbooks(View view){
         String date = setDate.getText().toString();
         String progress = setCatatan.getText().toString();
         Integer supervisor_id = 1;
 
-        Call<TmbhLBResponse>call = interfaceMahasiswa.postLB(supervisor_id, date, progress);
+        String token = sharedPref.getString("TOKEN", null);
+        Call<TmbhLBResponse>call = interfaceMahasiswa.postLB("Bearer " + token.toString(),supervisor_id, date, progress);
 
         call.enqueue(new Callback<TmbhLBResponse>() {
             @Override
             public void onResponse(Call<TmbhLBResponse> call, Response<TmbhLBResponse> response) {
-                Log.d("TesPost", response.body().getStatus().toString());
+                Log.d("TesPost", response.body().toString());
+
 
             }
 
             @Override
             public void onFailure(Call<TmbhLBResponse> call, Throwable t) {
-
+                Log.d("TestPost", t.getMessage().toString());
             }
         });
         finish();
